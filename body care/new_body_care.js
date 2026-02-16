@@ -120,7 +120,7 @@ let arr = JSON.parse(localStorage.getItem("cart")) || [];
 
 // 2. Fetch the data once on load
 window.addEventListener("load", () => {
-    fetch("/Database/database.json")
+    fetch("../Database/database.json")
         .then(res => res.json())
         .then(data => {
             newBodyProducts = data.new_body;

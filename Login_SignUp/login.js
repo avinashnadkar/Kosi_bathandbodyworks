@@ -11,7 +11,7 @@ async function startLogin() {
 
     try {
         // 1. Fetch default users from your local database.json
-        const response = await fetch("/Database/database.json");
+        const response = await fetch("../Database/database.json");
         const jsonData = await response.json();
         const defaultUsers = jsonData.users || []; // Assuming the key is "users"
 
