@@ -63,7 +63,7 @@ function getOfferData() {
     let allOffers = []; // Global variable to store all data from JSON
 
     // 1. Fetch the local JSON file
-    fetch("../Database/database.json")
+    fetch("Database/database.json")
         .then(response => response.json())
         .then(data => {
             allOffers = data.offer; // Store the array of offers
@@ -132,7 +132,7 @@ function getNewProducts() {
     //let freshProducts = []; // To store data from local JSON
 
     // 1. Fetch from local database.json
-    fetch("../Database/database.json")
+    fetch("Database/database.json")
         .then(response => response.json())
         .then(data => {
             freshProducts = data.Fresh; // Access the "Fresh" array
@@ -366,7 +366,7 @@ window.addEventListener("load", loadBanner);
 
 function loadBanner() {
     // 1. Fetch from the local database.json file
-    fetch("../Database/database.json")
+    fetch("Database/database.json")
         .then(response => response.json())
         .then(data => {
             // Access the "Banner" array from your JSON
@@ -401,7 +401,7 @@ window.addEventListener("load", getCategory);
 
 function getCategory() {
     // 1. Fetch from local JSON
-    fetch("../Database/database.json")
+    fetch("Database/database.json")
         .then(response => response.json())
         .then(data => {
             // Access the "Category" array from your local file
@@ -438,7 +438,7 @@ function getBodyWorkData() {
     let allBodyWorkImages = []; // Array to hold local JSON data
 
     // 1. Fetch from local database.json
-    fetch("../Database/database.json")
+    fetch("Database/database.json")
         .then(response => response.json())
         .then(data => {
             allBodyWorkImages = data.atBodyWorks;
