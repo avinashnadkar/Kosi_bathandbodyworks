@@ -19,5 +19,5 @@ async function getUserData() {
     users.push(newUser);
     localStorage.setItem("allUsers", JSON.stringify(users));
 
-    window.location.href = "login.html";
+window.location.href = "../Login_SignUp/login.html";
 }
